@@ -1,0 +1,5 @@
+app_las_site:
+    resource: "@AppLasSiteBundle/Controller/DefaultController.php"
+    type:     annotation
+    prefix:   /
+
