@@ -6,16 +6,24 @@
         <meta charset="UTF-8" />
         <title>{% block title %}AppLas{% endblock %} - AppLas</title>
         {% block stylesheets %}
-            {% stylesheets '@AppLasSiteBundle/Resources/public/css/styl.less' %}
-            <link rel="stylesheet" href="{{ asset_url }}">
+            {% stylesheets 
+                '@AppLasSiteBundle/Resources/public/bootstrap3/css/bootstrap.min.css'
+                '@AppLasSiteBundle/Resources/public/css/styl.less'
+            %}
+            <link rel="stylesheet" href="{{ asset_url }}">     
             {% endstylesheets %}
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-{% block body %}{% endblock %}
-
-
-        {% block javascripts %}{% endblock %}
+        {% block body %}
+        {% endblock %}
+        {% block javascripts %}
+            {% javascripts
+                '@AppLasSiteBundle/Resources/public/js/jquery.js'
+            %}
+                <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
     </body>
 </html>

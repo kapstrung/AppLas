@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25d2d34f41493ca948cf51d91b6f4421",
+    "hash": "3e3ffa4c6ac7138e40eb5e550607785a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1569,6 +1569,16 @@
                 "templating"
             ],
             "time": "2014-02-13 10:19:29"
+        },
+        {
+            "name": "twitter/bootstrap",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twitter/bootstrap",
+                "reference": "v2.1.0"
+            },
+            "type": "library"
         }
     ],
     "packages-dev": [
